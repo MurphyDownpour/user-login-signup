@@ -1,0 +1,39 @@
+// Стиль всей секции
+#log-in{
+  height: 794px;
+  background-color: #ae5da1;
+  // Высота контейнера занимает полностью всю высоту секции
+  >.container{
+    height: 100%;
+    >.row{
+      >.col-md-12{
+        height: 100%;
+        // Оформление блока формы
+        >.log-block{
+          max-width: 450px;
+          min-height: 200px;
+          background-color: #fff;
+          margin: 0 auto;
+          margin-top: 15em;
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid gray;
+          >h3{
+            text-align: center;
+            color: #ae5da1;
+          }
+          >p{
+            text-align: center;
+            margin: 35px 0px;
+          }
+          >button{
+            >a{
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

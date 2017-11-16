@@ -1,0 +1,27 @@
+#log-in {
+  height: 794px;
+  background-color: #ae5da1; }
+  #log-in > .container {
+    height: 100%; }
+    #log-in > .container > .row > .col-md-12 {
+      height: 100%; }
+      #log-in > .container > .row > .col-md-12 > .log-block {
+        max-width: 450px;
+        min-height: 200px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 15em;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid gray; }
+        #log-in > .container > .row > .col-md-12 > .log-block > h3 {
+          text-align: center;
+          color: #ae5da1; }
+        #log-in > .container > .row > .col-md-12 > .log-block > p {
+          text-align: center;
+          margin: 35px 0px; }
+        #log-in > .container > .row > .col-md-12 > .log-block > button > a {
+          color: #fff;
+          text-decoration: none; }
+
+/*# sourceMappingURL=signup-success.css.map */

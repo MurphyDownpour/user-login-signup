@@ -1,0 +1,115 @@
+// Стиль всей секции
+#log-in{
+  height: 794px;
+  background-color: #ae5da1;
+  // Высота контейнера занимает полностью всю высоту секции
+  >.container{
+    height: 100%;
+    >.row{
+      >.col-md-12{
+        height: 100%;
+        // Оформление блока формы
+        >.log-block{
+          max-width: 450px;
+          min-height: 700px;
+          background-color: #fff;
+          margin: 0 auto;
+          margin-top: 3em;
+          border-radius: 5px;
+          padding: 20px;
+          border: 1px solid gray;
+          // Оформление блока смены языка
+          >.languages{
+            >button{
+              background-color: #ae5da1;
+              border: 0;
+              border-radius: 3px;
+              color: #fff;
+              transition: all .5s ease;
+            }
+            >button:hover{
+              background-color: #fff;
+              color: #ae5da1;
+            }
+          }
+          //Оформление аватарки
+          >.avatar{
+            width: 100%;
+            margin-left: 40px;
+            >img{
+              width: 200px;
+              height: 200px;
+              border: 1px solid purple;
+              border-radius: 100%;
+            }
+          }
+          //Основная информация
+          >.general-info{
+            >h5{
+              color: purple;
+              font-weight: 600;
+              text-align: center;
+            }
+            >.titles{
+              display: inline-block;
+              >ul{
+                list-style: none;
+                >li{
+                  font-size: 15px;
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+            >.values{
+              display: inline-block;
+              margin-left: 20%;
+              >ul{
+                list-style: none;
+                >li{
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+          //Контактная информация
+          >.contact-info{
+            >h5{
+              color: purple;
+              font-weight: 600;
+              text-align: center;
+            }
+            >.titles{
+              display: inline-block;
+              >ul{
+                list-style: none;
+                >li{
+                  margin-bottom: 10px;
+                  >i{
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+            >.values{
+              display: inline-block;
+              margin-left: 20%;
+              >ul{
+                list-style: none;
+                >li{
+                  margin-bottom: 10px;
+                }
+              }
+            } 
+          }
+          >button{
+            >a{
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

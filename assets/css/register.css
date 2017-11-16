@@ -1,0 +1,41 @@
+#log-in {
+  min-height: 794px;
+  background-color: #ae5da1; }
+  #log-in > .container {
+    height: 100%; }
+    #log-in > .container > .row > .col-md-12 {
+      height: 100%; }
+      #log-in > .container > .row > .col-md-12 > .log-block {
+        max-width: 500px;
+        min-height: 650px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 1em;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid gray; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .languages > button {
+          background-color: #ae5da1;
+          border: 0;
+          border-radius: 3px;
+          color: #fff;
+          transition: all .5s ease; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .languages > button:hover {
+          background-color: #fff;
+          color: #ae5da1; }
+        #log-in > .container > .row > .col-md-12 > .log-block > h3 {
+          margin-left: 45px;
+          text-align: center;
+          color: #ae5da1; }
+        #log-in > .container > .row > .col-md-12 > .log-block input.error {
+          border-color: #e85656; }
+        #log-in > .container > .row > .col-md-12 > .log-block label.error {
+          display: block;
+          margin-top: 5px;
+          font-size: 12px;
+          color: #e85656; }
+        #log-in > .container > .row > .col-md-12 > .log-block > form > a {
+          display: inline-block;
+          margin-left: 45%; }
+
+/*# sourceMappingURL=register.css.map */

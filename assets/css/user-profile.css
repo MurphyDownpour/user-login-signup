@@ -1,0 +1,76 @@
+#log-in {
+  height: 794px;
+  background-color: #ae5da1; }
+  #log-in > .container {
+    height: 100%; }
+    #log-in > .container > .row > .col-md-12 {
+      height: 100%; }
+      #log-in > .container > .row > .col-md-12 > .log-block {
+        max-width: 450px;
+        min-height: 700px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 3em;
+        border-radius: 5px;
+        padding: 20px;
+        border: 1px solid gray; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .languages > button {
+          background-color: #ae5da1;
+          border: 0;
+          border-radius: 3px;
+          color: #fff;
+          transition: all .5s ease; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .languages > button:hover {
+          background-color: #fff;
+          color: #ae5da1; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .avatar {
+          width: 100%;
+          margin-left: 40px; }
+          #log-in > .container > .row > .col-md-12 > .log-block > .avatar > img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid purple;
+            border-radius: 100%; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .general-info > h5 {
+          color: purple;
+          font-weight: 600;
+          text-align: center; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .general-info > .titles {
+          display: inline-block; }
+          #log-in > .container > .row > .col-md-12 > .log-block > .general-info > .titles > ul {
+            list-style: none; }
+            #log-in > .container > .row > .col-md-12 > .log-block > .general-info > .titles > ul > li {
+              font-size: 15px;
+              font-weight: 600;
+              margin-bottom: 10px; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .general-info > .values {
+          display: inline-block;
+          margin-left: 20%; }
+          #log-in > .container > .row > .col-md-12 > .log-block > .general-info > .values > ul {
+            list-style: none; }
+            #log-in > .container > .row > .col-md-12 > .log-block > .general-info > .values > ul > li {
+              margin-bottom: 10px; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > h5 {
+          color: purple;
+          font-weight: 600;
+          text-align: center; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .titles {
+          display: inline-block; }
+          #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .titles > ul {
+            list-style: none; }
+            #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .titles > ul > li {
+              margin-bottom: 10px; }
+              #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .titles > ul > li > i {
+                font-size: 15px; }
+        #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .values {
+          display: inline-block;
+          margin-left: 20%; }
+          #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .values > ul {
+            list-style: none; }
+            #log-in > .container > .row > .col-md-12 > .log-block > .contact-info > .values > ul > li {
+              margin-bottom: 10px; }
+        #log-in > .container > .row > .col-md-12 > .log-block > button > a {
+          color: #fff;
+          text-decoration: none; }
+
+/*# sourceMappingURL=user-profile.css.map */

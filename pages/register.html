@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Style -->
+	<link rel="stylesheet" href="../assets/css/register.css">
+</head>
+<body>
+	<!-- Секция -->
+	<section id="log-in">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Блок формы -->
+					<div class="log-block">
+						<!--Языки-->
+						<div class="languages pull-right">
+							<button onclick="langEn()">EN</button>
+							<button onclick="langRu()">RU</button>
+						</div>
+						<!-- Заголовок -->
+						<h3 id="signupTitle">Регистрация</h3>
+						<!-- Форма -->
+						<form enctype="multipart/form-data" action="../php/register.php" id="sign-up" method="POST">
+							<div class="first-name form-group">
+								<label id="nameTitle">Имя: </label>
+								<input type="text" class="form-control" name="form_name">
+							</div>
+							<div class="last-name form-group">
+								<label id="surnameTitle">Фамилия: </label>
+								<input type="text" class="form-control" name="form_surname">
+							</div>
+							<div class="email form-group">
+								<label id="emailTitle">Email: </label>
+								<input type="email" class="form-control" name="form_email">
+							</div>
+							<div class="username form-group">
+								<label id="usernameTitle">Логин: </label>
+								<input type="text" class="form-control" name="form_username">
+							</div>
+							<div class="avatar form-group">
+								<label id="avatarTitle">Фото: </label>
+								<input type="file" class="form-control" name="form_image">
+							</div>
+							<div class="password form-group">
+								<label id="passwordTitle">Пароль: </label>
+								<input type="password" class="form-control" name="form_password" id="password">
+							</div>
+							<div class="password-confirm form-group">
+								<label id="repeatTitle">Повторите пароль: </label>
+								<input type="password" class="form-control" name="form_confirm">
+							</div>
+							<!-- Кнопка подтверждения -->
+							<button id="signupButton" type="submit" class="btn btn-success center-block">Зарегистрироваться</button>
+							<a href="/" id="loginTitle">Войти</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Подключение скриптов -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"
+	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>

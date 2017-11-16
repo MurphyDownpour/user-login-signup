@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Вход</title>
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Style -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+	<section id="log-in">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="log-block">
+						<!--Языки-->
+						<div class="languages pull-right">
+							<button onclick="langEn()">EN</button>
+							<button onclick="langRu()">RU</button>
+						</div>
+						<h3 id="heading">Вход</h3>
+						<!--Форма входа-->
+						<form action="php/login.php" id="auth">
+							<p id="error"> <? echo $error; ?></p>
+							<div class="username">
+								<label id="usernameTitle">Логин: </label>
+								<input type="text" class="form-control" name="login">
+							</div>
+							<br>
+							<div class="password">
+								<label id="passwordTitle">Пароль: </label>
+								<input type="password" class="form-control" name="password">
+							</div>
+							<br>
+							<input id="sign-in" type="submit" class="btn btn-primary center-block" value="Войти">
+							<div class="register">
+								<p id="accountTitle">У вас нет аккаунта?</p>
+								<a href="../pages/register.html" id="signupTitle">Зарегистрироваться</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Подключение скриптов -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"
+			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<script src="../assets/js/validate-login.js"></script>
+</body>
+</html>

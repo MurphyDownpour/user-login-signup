@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User profile</title>
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Style -->
+	<link rel="stylesheet" href="../assets/css/user-profile.css">
+</head>
+<body>
+	<section id="log-in">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12">
+					<!--Профиль пользователя-->
+	                <div class="log-block">
+						<!--Языки-->
+						<div class="languages pull-right">
+							<button onclick="langEn()">EN</button>
+							<button onclick="langRu()">RU</button>
+						</div>
+						<!--Аватарка-->
+	                    <div class="avatar center-block">
+	                    	<img src="<?php echo $data['avatar']; ?>" alt="" class="center-block">
+	                    </div>
+	                    <hr>
+						<!--Основная информация-->
+	                    <div class="general-info">
+	                    	<h5 id="generalTitle">Основная информация</h5>
+	                    	<br>
+	                    	<div class="titles">
+	                    		<ul>
+	                    			<li id="nameTitle">Имя:</li>
+	                    			<li id="surnameTitle">Фамилия:</li>
+	                    			<li id="usernameTitle">Логин:</li>
+	                    		</ul>
+	                    	</div>
+	                    	<div class="values">
+	                    		<ul>
+	                    			<li><? echo $data['name']; ?></li>
+	                    			<li><? echo $data['surname']; ?></li>
+	                    			<li><? echo $data['login']; ?></li>
+	                    		</ul>
+	                    	</div>
+	                    </div>
+	                    <br>
+	                    <hr>
+						<!--Контактная информация-->
+	                    <div class="contact-info">
+	                    	<h5 id="contactTitle">Контактная информация</h5>
+	                    	<br>
+	                    	<div class="titles">
+	                    		<ul>
+	                    			<li>
+	                    				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+	                    			</li>
+	                    		</ul>
+	                    	</div>
+	                    	<div class="values">
+	                    		<ul>
+	                    			<li><? echo $data['email']; ?></li>
+	                    		</ul>
+	                    	</div>
+	                    </div>
+						<hr>
+						<br>
+						<button class="btn btn-danger center-block">
+							<a href="/">Выход</a>
+						</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<script src="../assets/js/profile-lang.js"></script>
+</body>
+</html>
